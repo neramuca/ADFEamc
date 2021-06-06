@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "Trip-data.csv",
 				"fileSystem": "stagging"
 			},
 			"columnDelimiter": ",",
