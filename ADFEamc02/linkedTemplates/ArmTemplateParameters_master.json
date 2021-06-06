@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADFEamc02"
+		},
+		"SQLDB_connectionString": {
+			"value": ""
+		},
+		"azbslink01_connectionString": {
+			"value": ""
+		},
+		"adls02_accountKey": {
+			"value": ""
+		},
+		"adls02_properties_typeProperties_url": {
+			"value": "https://cuentaerasmo.dfs.core.windows.net"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
