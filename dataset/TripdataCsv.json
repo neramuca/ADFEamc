@@ -1,0 +1,20 @@
+{
+	"name": "TripdataCsv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adls02",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
