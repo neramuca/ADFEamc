@@ -1,0 +1,11 @@
+{
+	"name": "ServicioazkvErasmo",
+	"properties": {
+		"description": "servicio vinculado al repositorio de Azure Key Vault",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://azkvErasmo.vault.azure.net/"
+		}
+	}
+}
