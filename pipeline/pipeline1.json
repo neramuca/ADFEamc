@@ -440,6 +440,13 @@
 						"referenceName": "JoinAndAggregateData",
 						"type": "DataFlowReference"
 					},
+					"staging": {
+						"linkedService": {
+							"referenceName": "adls02",
+							"type": "LinkedServiceReference"
+						},
+						"folderPath": "stagging"
+					},
 					"compute": {
 						"coreCount": 8,
 						"computeType": "General"
