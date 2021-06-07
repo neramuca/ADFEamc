@@ -19,9 +19,17 @@
 			"type": "secureString",
 			"metadata": "Cadena protegida para \"connectionString\"de \"azbslink01\""
 		},
+		"AzureSynapseAnalytics1_connectionString": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"connectionString\"de \"AzureSynapseAnalytics1\""
+		},
 		"adls02_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://cuentaerasmo.dfs.core.windows.net"
+		},
+		"ServicioazkvErasmo_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://azkvErasmo.vault.azure.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -59,8 +67,14 @@
 					"azbslink01_connectionString": {
 						"value": "[parameters('azbslink01_connectionString')]"
 					},
+					"AzureSynapseAnalytics1_connectionString": {
+						"value": "[parameters('AzureSynapseAnalytics1_connectionString')]"
+					},
 					"adls02_properties_typeProperties_url": {
 						"value": "[parameters('adls02_properties_typeProperties_url')]"
+					},
+					"ServicioazkvErasmo_properties_typeProperties_baseUrl": {
+						"value": "[parameters('ServicioazkvErasmo_properties_typeProperties_baseUrl')]"
 					}
 				}
 			},
