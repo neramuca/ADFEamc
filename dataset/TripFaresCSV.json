@@ -1,0 +1,22 @@
+{
+	"name": "TripFaresCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adls02",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Tripfares.csv",
+				"fileSystem": "stagging"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
