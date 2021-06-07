@@ -8,10 +8,10 @@
 		"SQLDB_connectionString": {
 			"value": ""
 		},
-		"azbslink01_connectionString": {
+		"adls02_accountKey": {
 			"value": ""
 		},
-		"adls02_accountKey": {
+		"azbslink01_connectionString": {
 			"value": ""
 		},
 		"adls02_properties_typeProperties_url": {

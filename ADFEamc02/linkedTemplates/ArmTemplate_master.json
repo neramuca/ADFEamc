@@ -11,13 +11,13 @@
 			"type": "secureString",
 			"metadata": "Cadena protegida para \"connectionString\"de \"SQLDB\""
 		},
-		"azbslink01_connectionString": {
-			"type": "secureString",
-			"metadata": "Cadena protegida para \"connectionString\"de \"azbslink01\""
-		},
 		"adls02_accountKey": {
 			"type": "secureString",
 			"metadata": "Cadena protegida para \"accountKey\"de \"adls02\""
+		},
+		"azbslink01_connectionString": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"connectionString\"de \"azbslink01\""
 		},
 		"adls02_properties_typeProperties_url": {
 			"type": "string",
@@ -53,11 +53,11 @@
 					"SQLDB_connectionString": {
 						"value": "[parameters('SQLDB_connectionString')]"
 					},
-					"azbslink01_connectionString": {
-						"value": "[parameters('azbslink01_connectionString')]"
-					},
 					"adls02_accountKey": {
 						"value": "[parameters('adls02_accountKey')]"
+					},
+					"azbslink01_connectionString": {
+						"value": "[parameters('azbslink01_connectionString')]"
 					},
 					"adls02_properties_typeProperties_url": {
 						"value": "[parameters('adls02_properties_typeProperties_url')]"
