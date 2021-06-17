@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "ADFEamc02"
 		},
+		"AzureSynapseAnalytics1_connectionString": {
+			"value": ""
+		},
 		"SQLDB_connectionString": {
 			"value": ""
 		},
@@ -14,14 +17,14 @@
 		"azbslink01_connectionString": {
 			"value": ""
 		},
-		"AzureSynapseAnalytics1_connectionString": {
+		"AZDBLinkErasmo_accessToken": {
 			"value": ""
-		},
-		"adls02_properties_typeProperties_url": {
-			"value": "https://cuentaerasmo.dfs.core.windows.net"
 		},
 		"ServicioazkvErasmo_properties_typeProperties_baseUrl": {
 			"value": "https://azkvErasmo.vault.azure.net/"
+		},
+		"adls02_properties_typeProperties_url": {
+			"value": "https://cuentaerasmo.dfs.core.windows.net"
 		}
 	}
 }
