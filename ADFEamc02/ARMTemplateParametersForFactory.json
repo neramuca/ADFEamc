@@ -20,6 +20,9 @@
 		"azbslink01_connectionString": {
 			"value": ""
 		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
 		"ServicioazkvErasmo_properties_typeProperties_baseUrl": {
 			"value": "https://azkvErasmo.vault.azure.net/"
 		},

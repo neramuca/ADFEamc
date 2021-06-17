@@ -27,6 +27,10 @@
 			"type": "secureString",
 			"metadata": "Cadena protegida para \"connectionString\"de \"azbslink01\""
 		},
+		"AzureDatabricks1_accessToken": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"accessToken\"de \"AzureDatabricks1\""
+		},
 		"ServicioazkvErasmo_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://azkvErasmo.vault.azure.net/"
@@ -76,6 +80,9 @@
 					},
 					"azbslink01_connectionString": {
 						"value": "[parameters('azbslink01_connectionString')]"
+					},
+					"AzureDatabricks1_accessToken": {
+						"value": "[parameters('AzureDatabricks1_accessToken')]"
 					},
 					"ServicioazkvErasmo_properties_typeProperties_baseUrl": {
 						"value": "[parameters('ServicioazkvErasmo_properties_typeProperties_baseUrl')]"
