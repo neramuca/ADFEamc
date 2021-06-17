@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "ADFEamc02"
 		},
+		"AZDBLinkErasmo_accessToken": {
+			"value": ""
+		},
 		"AzureSynapseAnalytics1_connectionString": {
 			"value": ""
 		},
@@ -15,9 +18,6 @@
 			"value": ""
 		},
 		"azbslink01_connectionString": {
-			"value": ""
-		},
-		"AZDBLinkErasmo_accessToken": {
 			"value": ""
 		},
 		"ServicioazkvErasmo_properties_typeProperties_baseUrl": {
