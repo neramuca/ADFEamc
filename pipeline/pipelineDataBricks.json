@@ -4,7 +4,7 @@
 		"description": "PipelIne hacia databricks",
 		"activities": [
 			{
-				"name": "Notebook1",
+				"name": "Ejecuta Notebook",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
