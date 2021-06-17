@@ -1,0 +1,7 @@
+{
+	"name": "pipelineDataBricks",
+	"properties": {
+		"description": "PipelIne hacia databricks",
+		"annotations": []
+	}
+}
