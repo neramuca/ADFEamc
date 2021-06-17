@@ -1,0 +1,7 @@
+{
+	"name": "PipelineAZDatabricks",
+	"properties": {
+		"description": "Pipeline para lanzar Azure databricks",
+		"annotations": []
+	}
+}
