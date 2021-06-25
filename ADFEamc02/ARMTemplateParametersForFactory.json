@@ -8,6 +8,9 @@
 		"AZDBLinkErasmo_accessToken": {
 			"value": ""
 		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
 		"AzureSynapseAnalytics1_connectionString": {
 			"value": ""
 		},
@@ -18,9 +21,6 @@
 			"value": ""
 		},
 		"azbslink01_connectionString": {
-			"value": ""
-		},
-		"AzureDatabricks1_accessToken": {
 			"value": ""
 		},
 		"ServicioazkvErasmo_properties_typeProperties_baseUrl": {

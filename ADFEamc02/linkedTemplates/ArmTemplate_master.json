@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Cadena protegida para \"accessToken\"de \"AZDBLinkErasmo\""
 		},
+		"AzureDatabricks1_accessToken": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"accessToken\"de \"AzureDatabricks1\""
+		},
 		"AzureSynapseAnalytics1_connectionString": {
 			"type": "secureString",
 			"metadata": "Cadena protegida para \"connectionString\"de \"AzureSynapseAnalytics1\""
@@ -26,10 +30,6 @@
 		"azbslink01_connectionString": {
 			"type": "secureString",
 			"metadata": "Cadena protegida para \"connectionString\"de \"azbslink01\""
-		},
-		"AzureDatabricks1_accessToken": {
-			"type": "secureString",
-			"metadata": "Cadena protegida para \"accessToken\"de \"AzureDatabricks1\""
 		},
 		"ServicioazkvErasmo_properties_typeProperties_baseUrl": {
 			"type": "string",
@@ -69,6 +69,9 @@
 					"AZDBLinkErasmo_accessToken": {
 						"value": "[parameters('AZDBLinkErasmo_accessToken')]"
 					},
+					"AzureDatabricks1_accessToken": {
+						"value": "[parameters('AzureDatabricks1_accessToken')]"
+					},
 					"AzureSynapseAnalytics1_connectionString": {
 						"value": "[parameters('AzureSynapseAnalytics1_connectionString')]"
 					},
@@ -80,9 +83,6 @@
 					},
 					"azbslink01_connectionString": {
 						"value": "[parameters('azbslink01_connectionString')]"
-					},
-					"AzureDatabricks1_accessToken": {
-						"value": "[parameters('AzureDatabricks1_accessToken')]"
 					},
 					"ServicioazkvErasmo_properties_typeProperties_baseUrl": {
 						"value": "[parameters('ServicioazkvErasmo_properties_typeProperties_baseUrl')]"
