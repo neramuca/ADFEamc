@@ -7,37 +7,13 @@
 			"metadata": "Nombre de instancia de Data Factory",
 			"defaultValue": "ADFEamc02"
 		},
-		"AZDBLinkErasmo_accessToken": {
-			"type": "secureString",
-			"metadata": "Cadena protegida para \"accessToken\"de \"AZDBLinkErasmo\""
-		},
 		"AzureDatabricks1_accessToken": {
 			"type": "secureString",
 			"metadata": "Cadena protegida para \"accessToken\"de \"AzureDatabricks1\""
 		},
-		"AzureSynapseAnalytics1_connectionString": {
-			"type": "secureString",
-			"metadata": "Cadena protegida para \"connectionString\"de \"AzureSynapseAnalytics1\""
-		},
-		"SQLDB_connectionString": {
-			"type": "secureString",
-			"metadata": "Cadena protegida para \"connectionString\"de \"SQLDB\""
-		},
-		"adls02_accountKey": {
-			"type": "secureString",
-			"metadata": "Cadena protegida para \"accountKey\"de \"adls02\""
-		},
-		"azbslink01_connectionString": {
-			"type": "secureString",
-			"metadata": "Cadena protegida para \"connectionString\"de \"azbslink01\""
-		},
 		"ServicioazkvErasmo_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://azkvErasmo.vault.azure.net/"
-		},
-		"adls02_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://cuentaerasmo.dfs.core.windows.net"
 		},
 		"containerUri": {
 			"type": "string",
@@ -66,29 +42,11 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"AZDBLinkErasmo_accessToken": {
-						"value": "[parameters('AZDBLinkErasmo_accessToken')]"
-					},
 					"AzureDatabricks1_accessToken": {
 						"value": "[parameters('AzureDatabricks1_accessToken')]"
 					},
-					"AzureSynapseAnalytics1_connectionString": {
-						"value": "[parameters('AzureSynapseAnalytics1_connectionString')]"
-					},
-					"SQLDB_connectionString": {
-						"value": "[parameters('SQLDB_connectionString')]"
-					},
-					"adls02_accountKey": {
-						"value": "[parameters('adls02_accountKey')]"
-					},
-					"azbslink01_connectionString": {
-						"value": "[parameters('azbslink01_connectionString')]"
-					},
 					"ServicioazkvErasmo_properties_typeProperties_baseUrl": {
 						"value": "[parameters('ServicioazkvErasmo_properties_typeProperties_baseUrl')]"
-					},
-					"adls02_properties_typeProperties_url": {
-						"value": "[parameters('adls02_properties_typeProperties_url')]"
 					}
 				}
 			},

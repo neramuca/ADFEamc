@@ -7,62 +7,19 @@
 			"metadata": "Nombre de instancia de Data Factory",
 			"defaultValue": "ADFEamc02"
 		},
-		"AZDBLinkErasmo_accessToken": {
-			"type": "secureString",
-			"metadata": "Cadena protegida para \"accessToken\"de \"AZDBLinkErasmo\""
-		},
 		"AzureDatabricks1_accessToken": {
 			"type": "secureString",
 			"metadata": "Cadena protegida para \"accessToken\"de \"AzureDatabricks1\""
 		},
-		"AzureSynapseAnalytics1_connectionString": {
-			"type": "secureString",
-			"metadata": "Cadena protegida para \"connectionString\"de \"AzureSynapseAnalytics1\""
-		},
-		"SQLDB_connectionString": {
-			"type": "secureString",
-			"metadata": "Cadena protegida para \"connectionString\"de \"SQLDB\""
-		},
-		"adls02_accountKey": {
-			"type": "secureString",
-			"metadata": "Cadena protegida para \"accountKey\"de \"adls02\""
-		},
-		"azbslink01_connectionString": {
-			"type": "secureString",
-			"metadata": "Cadena protegida para \"connectionString\"de \"azbslink01\""
-		},
 		"ServicioazkvErasmo_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://azkvErasmo.vault.azure.net/"
-		},
-		"adls02_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://cuentaerasmo.dfs.core.windows.net"
 		}
 	},
 	"variables": {
 		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
 	},
 	"resources": [
-		{
-			"name": "[concat(parameters('factoryName'), '/AZDBLinkErasmo')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"description": "Servicio vinculado a Azure databricks",
-				"annotations": [],
-				"type": "AzureDatabricksDeltaLake",
-				"typeProperties": {
-					"domain": "https://adb-5168069409460617.17.azuredatabricks.net",
-					"clusterId": "0409-173624-data814",
-					"accessToken": {
-						"type": "SecureString",
-						"value": "[parameters('AZDBLinkErasmo_accessToken')]"
-					}
-				}
-			},
-			"dependsOn": []
-		},
 		{
 			"name": "[concat(parameters('factoryName'), '/AzureDatabricks1')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
@@ -85,33 +42,6 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureSynapseAnalytics1')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureSqlDW",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureSynapseAnalytics1_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/SQLDB')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"description": "Conexion a la bbdd TaxiData",
-				"annotations": [],
-				"type": "AzureSqlDatabase",
-				"typeProperties": {
-					"connectionString": "[parameters('SQLDB_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
 			"name": "[concat(parameters('factoryName'), '/ServicioazkvErasmo')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
@@ -121,38 +51,6 @@
 				"type": "AzureKeyVault",
 				"typeProperties": {
 					"baseUrl": "[parameters('ServicioazkvErasmo_properties_typeProperties_baseUrl')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/adls02')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"description": "AZURE DATA LAKE STORAGE 2",
-				"annotations": [],
-				"type": "AzureBlobFS",
-				"typeProperties": {
-					"url": "[parameters('adls02_properties_typeProperties_url')]",
-					"accountKey": {
-						"type": "SecureString",
-						"value": "[parameters('adls02_accountKey')]"
-					}
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/azbslink01')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"description": "Azure Blob Storage link 01",
-				"annotations": [],
-				"type": "AzureTableStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('azbslink01_connectionString')]"
 				}
 			},
 			"dependsOn": []
